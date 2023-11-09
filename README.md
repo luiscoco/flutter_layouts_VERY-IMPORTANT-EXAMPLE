@@ -31,3 +31,32 @@ This layout is organized as a Row. The row contains two children: a column on th
 The left column’s widget tree nests rows and columns.
 
 ![image](https://github.com/luiscoco/flutter_layouts_VERY-IMPORTANT-EXAMPLE/assets/32194879/8466cb7c-47b4-4e77-8c68-9d98c1fed69f)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Note:** **Row** and **Column** are basic primitive widgets for horizontal and vertical layouts—these low-level widgets allow for maximum customization.
+
+Flutter also offers specialized, higher level widgets that might be sufficient for your needs. 
+
+For example, instead of Row you might prefer **ListTile**, an easy-to-use widget with properties for leading and trailing icons, and up to 3 lines of text. 
+
+Instead of Column, you might prefer **ListView**, a column-like layout that automatically scrolls if its content is too long to fit the available space. For more information, see Common layout widgets.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Aligning widgets
+
+You control how a row or column aligns its children using the mainAxisAlignment and crossAxisAlignment properties. 
+
+For a row, the main axis runs horizontally and the cross axis runs vertically. For a column, the main axis runs vertically and the cross axis runs horizontally.
+
+![image](https://github.com/luiscoco/flutter_layouts_VERY-IMPORTANT-EXAMPLE/assets/32194879/00e6b33a-4c14-403d-8946-de77f76ec433)
+
+The **MainAxisAlignment** and **CrossAxisAlignment** enums offer a variety of constants for controlling alignment.
+
+**Note:** When you add images to your project, you need to update the pubspec.yaml file to access them—this example uses Image.asset to display the images. 
+
+For more information, see this example’s pubspec.yaml file or Adding assets and images. You don’t need to do this if you’re referencing online images using Image.network.
+
+
+
