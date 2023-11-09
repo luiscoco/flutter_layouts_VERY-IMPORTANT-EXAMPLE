@@ -285,3 +285,46 @@ final iconList = DefaultTextStyle.merge(
 );
 ```
 
+The leftColumn variable contains the ratings and icons rows, as well as the title and text that describes the Pavlova:
+
+```dart
+final leftColumn = Container(
+  padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
+  child: Column(
+    children: [
+      titleText,
+      subTitle,
+      ratings,
+      iconList,
+    ],
+  ),
+);
+```
+
+The left column is placed in a SizedBox to constrain its width. Finally, the UI is constructed with the entire row (containing the left column and the image) inside a Card.
+
+The Pavlova image is from Pixabay. You can embed an image from the net using Image.network() but, for this example, the image is saved to an images directory in the project, added to the pubspec file, and accessed using Images.asset(). For more information, see Adding assets and images.
+
+```dart
+body: Center(
+  child: Container(
+    margin: const EdgeInsets.fromLTRB(0, 40, 0, 30),
+    height: 600,
+    child: Card(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 440,
+            child: leftColumn,
+          ),
+          mainImage,
+        ],
+      ),
+    ),
+  ),
+),
+```
+
+Tip: The Pavlova example runs best horizontally on a wide device, such as a tablet. If you are running this example in the iOS simulator, you can select a different device using the Hardware > Device menu. For this example, we recommend the iPad Pro. You can change its orientation to landscape mode using Hardware > Rotate. You can also change the size of the simulator window (without changing the number of logical pixels) using Window > Scale.
+
