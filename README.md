@@ -77,11 +77,26 @@ Row(
 
 ![image](https://github.com/luiscoco/flutter_layouts_VERY-IMPORTANT-EXAMPLE/assets/32194879/f08fa708-57e7-45e5-86bd-bde70650818d)
 
-App source: https://github.com/flutter/website/tree/main/examples/layout/row_column
+**App source code:** https://github.com/flutter/website/tree/main/examples/layout/row_column
 
 ### Column sample
 
 **Columns** work the same way as rows. The following example shows a column of 3 images, each is 100 pixels high. The height of the render box (in this case, the entire screen) is more than 300 pixels, so setting the main axis alignment to spaceEvenly divides the free vertical space evenly between, above, and below each image.
+
+```dart
+Column(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: [
+    Image.asset('images/pic1.jpg'),
+    Image.asset('images/pic2.jpg'),
+    Image.asset('images/pic3.jpg'),
+  ],
+);
+```
+
+![image](https://github.com/luiscoco/flutter_layouts_VERY-IMPORTANT-EXAMPLE/assets/32194879/0f1357e2-2097-4015-a49b-a2ed683e64d5)
+
+**App source code:** https://github.com/flutter/website/tree/main/examples/layout/row_column
 
 
 
