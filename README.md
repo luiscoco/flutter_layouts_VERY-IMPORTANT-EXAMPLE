@@ -58,5 +58,31 @@ The **MainAxisAlignment** and **CrossAxisAlignment** enums offer a variety of co
 
 For more information, see this example’s pubspec.yaml file or Adding assets and images. You don’t need to do this if you’re referencing online images using Image.network.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Row sample
+
+In the following example, each of the 3 images is 100 pixels wide. The render box (in this case, the entire screen) is more than 300 pixels wide, so setting the main axis alignment to spaceEvenly divides the free horizontal space evenly between, before, and after each image.
+
+```dart
+Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  children: [
+    Image.asset('images/pic1.jpg'),
+    Image.asset('images/pic2.jpg'),
+    Image.asset('images/pic3.jpg'),
+  ],
+);
+```
+
+![image](https://github.com/luiscoco/flutter_layouts_VERY-IMPORTANT-EXAMPLE/assets/32194879/f08fa708-57e7-45e5-86bd-bde70650818d)
+
+App source: https://github.com/flutter/website/tree/main/examples/layout/row_column
+
+### Column sample
+
+**Columns** work the same way as rows. The following example shows a column of 3 images, each is 100 pixels high. The height of the render box (in this case, the entire screen) is more than 300 pixels, so setting the main axis alignment to spaceEvenly divides the free vertical space evenly between, above, and below each image.
+
+
 
 
